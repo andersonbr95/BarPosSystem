@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author bryananderson
+ *
+ */
+module BarPosSystem {
+}
