@@ -15,7 +15,8 @@ public class FollowUpState implements State{
 		int followUpCommand = usrInpt.nextInt();
 		
 		if (followUpCommand==1) {
-			//placeholder for order state
+			CheckoutState checkoutState = new CheckoutState();
+			checkoutState.posStatus(context);
 		}
 		else if (followUpCommand==2) {
 			ViewDrinkMenuState goBackToMenu = new ViewDrinkMenuState();

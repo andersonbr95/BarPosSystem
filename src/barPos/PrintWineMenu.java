@@ -1,6 +1,6 @@
 package barPos;
 
-public class PrintWineMenu {
+public class PrintWineMenu implements printMenus{
 	WineMenu wineMenu;
 	Wine wine;
 	

@@ -32,8 +32,10 @@ public class MenuFactory {
 		}
 		
 		else if(menuChoice == 3) {
-			System.out.print("Place holder for liquor menu");
-			//place holder for liquor menu
+			LiquorMenu liquorMenu = new LiquorMenu();
+			printLiquorMenu prntlqrmnu = new printLiquorMenu(liquorMenu);
+			
+			prntlqrmnu.printMenu();
 		}
 		
 		else {

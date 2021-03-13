@@ -8,11 +8,12 @@ public class MainMenuStatus implements State{
 		
 		Scanner usrInpt = new Scanner(System.in);
 		
-		//Sub in the main menu iterator if time allows
 		System.out.print("--------COOL HIP BAR MENU OPTIONS--------\n" + 
 		"1) Menu Selections \n" + 
-		"2) Checkout\n" +
-		"3) Log Out\n");
+		
+		"2) View All Menus\n"+
+		"3) Checkout\n" +
+		"4) Log Out\n");
 		
 		System.out.print("");
 
@@ -24,9 +25,12 @@ public class MainMenuStatus implements State{
 			//insert View Drink Menu State Here
 		}
 		else if(bartndrInpt == 2) {
-			System.out.print("Here is the cashout menu place holder");
-			
-			//To-do cashout menu state command center
+			viewAllState viewAll = new viewAllState();
+			viewAll.posStatus(context);
+		}
+		else if(bartndrInpt == 3) {
+			CheckoutState checkoutState = new CheckoutState();
+			checkoutState.posStatus(context);
 		}
 		else {
 			System.exit(0);
